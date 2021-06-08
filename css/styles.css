@@ -10,6 +10,7 @@ body {
     font-family: poppins,Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 header{
     display: flex; 
     align-items: center; 
@@ -20,8 +21,16 @@ header a{
     padding: 10px;
 }
 
+
+i{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
 nav{
-    margin:auto;
+    margin: auto;
 }
 
 nav ul{

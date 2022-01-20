@@ -1,5 +1,5 @@
 @font-face {
-    font-family: poppins;
+    font-family: "poppins";
     src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet");
 }
 
@@ -68,7 +68,7 @@ a{
     padding: 10px 30px;
     border-radius: 30px;
     border-color: #707070; 
-    float: right;
+    
     margin-right: 20px;
 }
 
@@ -115,13 +115,21 @@ a{
     box-sizing: border-box;
 }
 
+.explore-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+
 .footer-container{
     background-color: #023373;
     padding-bottom: 64px;
 }
 
 .footer{
-    width: 80%;
+    width: 100%;
     height: 40vh;
     background-color: #023373;
     color: #fff;
@@ -129,6 +137,7 @@ a{
     justify-content: center;
     flex-wrap: wrap;
     margin: 8px auto;
+    padding-top: 30px;
 }
 
 .footer-heading{

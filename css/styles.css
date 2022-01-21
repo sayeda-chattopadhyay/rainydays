@@ -54,7 +54,12 @@ nav a:hover{
 }
 
 
-
+.active{
+    background-color: #125dbf;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
 
 /* links */
 a{

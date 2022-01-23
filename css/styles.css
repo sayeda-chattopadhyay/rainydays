@@ -1,8 +1,14 @@
 @font-face {
     font-family: "poppins";
-    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet");
+    src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap") format("true type");
 }
 
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    
+}
 
 h1,
 h2,
@@ -11,14 +17,73 @@ body {
 }
 
 
+
+
+.logo{
+    width: 100px;
+    margin-left: 1rem;
+
+}
+
 header{
     display: flex; 
     align-items: center; 
+    height: 5rem;
+    border: 1px solid orange; 
+}
+
+nav{
+    margin: auto;
+    border: 3px solid red;
+}
+
+nav ul{
+    padding: 0px;
+    border: 3px dotted blue;
+}
+
+nav ul li{
+    display: inline-block; 
+    border: 2px solid green;
+}
+
+
+/* link */
+
+a{
+    text-decoration: none;
 }
 
 header a{
     color: #1d1d1d;
     padding: 10px;
+}
+
+
+.cta {
+    background-color: #023373;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border-color: #707070;    
+    margin-right: 20px;
+}
+
+
+
+.active{
+    background-color: #125dbf;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+.cta:hover{
+    cursor: pointer;
+    background-color: #134706;
+    transition: all 0.4s ease out;
 }
 
 
@@ -29,20 +94,6 @@ i{
     font-weight: 600;
 }
 
-nav{
-    margin: auto;
-}
-
-nav ul{
-    padding: 0 px;
-}
-
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 10px;
-    font-weight: 600;
-}
 
 nav ul li a{
     color: #1d1d1d;
@@ -54,40 +105,22 @@ nav a:hover{
 }
 
 
-.active{
-    background-color: #125dbf;
-    color: #fff;
-    border-radius: 4px;
-    padding: 5px;
-}
 
-/* links */
-a{
-    text-decoration: none;
-}
 .footer-heading a{
     color:#fff ;
 }
 
-.cta {
-    background-color: #023373;
-    color: #fff;
-    font-size: 1em;
-    padding: 10px 30px;
-    border-radius: 30px;
-    border-color: #707070; 
-    
-    margin-right: 20px;
-}
 
-.cta :hover{
-    cursor: pointer;
-    background-color: #125dbf;
-    transition: all 0.4s ease out;
-}
 
 
 /* Homepage */
+
+
+
+
+.adventure_content{
+    position: relative;
+}
 
 .adventure,
 .outdoor,
@@ -96,45 +129,148 @@ a{
 {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: right;
+    background-position-x: center;
     background-position-y: bottom;
     min-height: 70vh;
     position: relative;
+    width: 100%;
+
 }
 .adventure{
     background-image: url("../images/Home-adventure.jpg");
+    
 }
 
 .outdoor{
     background-image: url("../images/Home-outdoor.jpg");
+    
 }
 
 .seasontype{
     background-image: url("../images/Home-seasontype.jpeg");
+    
 }
 
 .guidance{
     background-image: url("../images/Home-guidance.jpg")
+   
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+
 
 .explore-cta{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    padding-top:25rem ;
+    padding-left: 5rem;
+}
+
+.navigation-menu{
+    overflow: hidden;
+    border-color: 2px solid blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+}
+
+/* Outdoor Product Page */
+
+.heading_of_outdoor_page{
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-left: 1rem;
 }
 
 
+.OutdoorProducts{
+    border: 1px solid red;
+}
+    
 
-.footer-container{
+.OutdoorProducts h3{
+    margin-left: 1rem;;
+}
+.productForWomen{
+    border: 1px solid rgb(7, 104, 39);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.WomenProduct{
+    margin-left: 1rem;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.MenProduct{
+    margin-right: 2rem;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.yellowJacket{
+    border: 2px solid red;
+    width: 400px;
+    margin-top: 4rem;
+    
+
+}
+.jacket1{
+    width: 100%;
+}
+
+.jacketwrapp1{
+    display: inline-block;
+    border: 2px solid black;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.text1{
+    float: left;
+    border: 1px solid black;
+    font-size: 1em;
+    margin-left: 1rem;
+}
+.icon1{
+    float: right;
+    border: 1px solid black;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}   
+
+.yellowjacketSec1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.viewLink{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* footer */
+
+
+
+.footerContainer{
     background-color: #023373;
     padding-bottom: 64px;
 }
+    
+
 
 .footer{
     width: 100%;

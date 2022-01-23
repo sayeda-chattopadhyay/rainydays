@@ -130,7 +130,7 @@ nav a:hover{
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
-    background-position-y: bottom;
+    background-position-y: bottom;   
     min-height: 70vh;
     position: relative;
     width: 100%;
@@ -247,7 +247,6 @@ nav a:hover{
 .yellowjacketSec1{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
     
 }

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset= "UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Final check out">
+    <title>RAINYDAYS| checkout page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="/css/all.css">
+    <link rel="stylesheet" href="css/styles.css"> 
+  </head>
+  <body>
+      <header class="top-nav">
+        <div class="brand-logo">
+            <a href="index.html" > <img class="logo" src="/images/rainydays_logo .png" alt="Logo of Rainydays website"></a>
+          </div>
+          <h1>check out</h1>
+      </header>
+      <section>
+          <div class="checkout-heading">
+            <h2>guest checkout</h2>
+            <div class="fast-checkout">
+              <p>Already have account ?</p>
+              <a href="#">Login to fast check out</a>
+            </div>
+          </div>
+          <div class="checkout-steps">
+              <p>1.shippng address</p>
+              <p>2.contact information</p>
+              <p>3.delivery option</p>
+              <p>4.payment method</p>
+          </div>                   
+      </section>
+      <section class="form_fillUp">
+          <h3>1.shipping address</h3>
+          <form action="" method="post">
+                <label for="first_name"> * First Name</label>
+                <input type="text" id="first_name" name="first_name" class="form__input"required>
+                <label for="last_name"> * Last Name</label>
+                <input type="text" id="last_name" name="last_name" class="form__input"required>
+                <label for="address"> * Address 1</label>
+                <input type="address" id="address" name="address" class="form__input"required>
+                <label for="country_code"> * Post Code</label>
+                <input type="text" id="country_code" name="country_code" class="form__input"required>
+                <label for="city"> * City</label>
+                <input type="text" id="city" name="city" class="form__input"required>
+                <label for="state"> * State</label>
+                <input type="text" id="state" name="state" class="form__input"required>
+                <label for="country"> * Country</label>
+                <input type="text" id="country" name="country" class="form__input"required>         
+          </form>
+          <h3>2.Contact Information</h3>
+          <form action="" method="post">
+            <label for="email"> * Email</label>
+            <input type="email" id="email" name="email" class="form__input"required>
+            <label for="contact_number"> * Contact Number</label>
+            <input type="tel" id="contact_number" name="contact_number" class="form__input" class="form__input"required>
+          </form>
+          <h3>3.Delivery Option</h3> 
+          <div>
+            <input type="radio" name="delivery_type" id="home_delivery" value="home_delivery" >
+            <label for="home_delivery">Home Delivery</label>            
+          </div>
+          <div>
+            <input type="radio" name="delivery_type" id="pickup_from_postoffice" value="pickup_from_postoffice"  >
+            <label for="pickup_from_postOffice">Pick up from Post Office</label>
+          </div>
+          <h3>4.Payment Method</h3> 
+          <div>
+            <input type="radio" name="visa_master_card" id="visa_master_card" value="visa_master_card" >
+            <label for="visa_master_card">Visa/Master Card</label>            
+          </div>
+          <div>
+            <input type="radio" name="vipps" id="vipps" value="vipps"  >
+            <label for="vipps">Vipps</label>
+          </div>
+          <div>
+            <input type="radio" name="paypal" id="paypal" value="paypal"  >
+            <label for="paypal">paypal</label>
+          </div>
+          <h4>Add Promo Code/Voucher + </h4>
+      </section>
+  </body>

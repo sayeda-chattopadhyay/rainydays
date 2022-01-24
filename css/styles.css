@@ -195,7 +195,6 @@ nav a:hover{
 .productForWomen{
     border: 1px solid rgb(7, 104, 39);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
@@ -212,7 +211,7 @@ nav a:hover{
     text-transform: capitalize;
 }
 
-.yellowJacket{
+.jacketList{
     border: 2px solid red;
     width: 400px;
     margin-top: 4rem;

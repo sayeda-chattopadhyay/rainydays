@@ -16,13 +16,14 @@ body {
     font-family: poppins,Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
+img{
+    width: 100%;
+}
 
 
 .logo{
-    width: 100px;
+    width: 120px;
     margin-left: 1rem;
-
 }
 
 header{
@@ -30,7 +31,10 @@ header{
     align-items: center; 
     height: 5rem;
     border: 1px solid orange; 
+    justify-content: space-around;
 }
+
+
 
 nav{
     margin: auto;
@@ -47,6 +51,9 @@ nav ul li{
     border: 2px solid green;
 }
 
+.nav-icons{
+    margin-right: 1rem;
+}
 
 /* link */
 
@@ -73,7 +80,7 @@ header a{
 
 
 .active{
-    background-color: #125dbf;
+    background-color: #023373;
     color: #fff;
     border-radius: 4px;
     padding: 5px;
@@ -82,7 +89,7 @@ header a{
 
 .cta:hover{
     cursor: pointer;
-    background-color: #134706;
+    background-color: #155dbd;
     transition: all 0.4s ease out;
 }
 
@@ -243,7 +250,7 @@ nav a:hover{
     margin-right: 0.5rem;
 }   
 
-.yellowjacketSec1{
+.jacketSec1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;

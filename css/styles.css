@@ -225,7 +225,7 @@ nav a:hover{
     
 
 }
-.jacket1{
+.women-jackets_images{
     width: 100%;
 }
 
@@ -250,7 +250,7 @@ nav a:hover{
     margin-right: 0.5rem;
 }   
 
-.jacketSec1{
+.women-jackets{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -264,6 +264,65 @@ nav a:hover{
     font-weight: bold;
     text-transform: capitalize;
 }
+
+
+/* Jacket specific page */
+
+.selected-jacket{
+    display: flex;  
+    max-width: 1000px;
+
+}
+
+.red-jacket{
+    flex: 1;
+}
+
+.selected-jacket_image{
+    border-radius: 2px;
+}
+
+
+
+
+/* checkout page */
+
+.checkout-heading{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    border: 2px solid blue;
+    flex-wrap: wrap;
+}
+
+.fast-checkout{
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 500px; */
+    border: 2px solid red;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+.checkout-steps{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    padding: 10px 20px;
+}
+
+
+input,
+select{
+    border: 1px solid #1d1d1d;
+}
+.form__input{
+    display: block;
+}
+
 
 
 /* footer */

@@ -30,7 +30,7 @@ header{
     display: flex; 
     align-items: center; 
     height: 5rem;
-    border: 1px solid orange; 
+    border: 1px solid orange;  
     justify-content: space-around;
 }
 
@@ -49,6 +49,7 @@ nav ul{
 nav ul li{
     display: inline-block; 
     border: 2px solid green;
+
 }
 
 .nav-icons{
@@ -104,7 +105,8 @@ i{
 
 nav ul li a{
     color: #1d1d1d;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 nav a:hover{
@@ -163,6 +165,21 @@ nav a:hover{
    
 }
 
+.product-featured h1{
+    border: 2px solid green;
+    font-size: 35px;
+    margin-right: 0.5em;
+    text-align: right;
+
+}
+
+.product-featured h2{
+    color: #fff;
+    font-size: 35px;  
+    text-align: left;
+    border: 2px solid brown;
+    padding-left: 0.5em;
+}
 
 
 .explore-cta{
@@ -170,7 +187,19 @@ nav a:hover{
     flex-direction: row;
     justify-content: flex-end;
     padding-top:25rem ;
+    padding-right: 1rem;
     padding-left: 5rem;
+    border: 3px solid yellowgreen;
+}
+
+.explore-cta-season{   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+    padding-top:25rem;
+    padding-left: 5rem;
+    margin-left: 10px;
+    border: 3px solid black;
 }
 
 .navigation-menu{
@@ -184,10 +213,22 @@ nav a:hover{
 
 /* Outdoor Product Page */
 
-.heading_of_outdoor_page{
-    font-size: 2.5em;
-    font-weight: normal;
-    margin-left: 1rem;
+.OutdoorProducts h1{
+    border: 2px solid green;
+    font-size: 40px;
+    margin-left: 0.5em;
+    text-align: left;
+    color: #023373;
+    font-weight: normal;   
+}
+
+.OutdoorProducts h2{
+    border: 2px solid black;
+    font-size: 25px;
+    margin-left: 0.5em;
+    text-align: left;
+    color: #023373;
+    font-weight: bold; 
 }
 
 
@@ -197,19 +238,18 @@ nav a:hover{
     
 
 .OutdoorProducts h3{
-    margin-left: 1rem;;
+    border: 2px solid red;
+    font-size: 20px;
+    margin-left: 0.5em;
+    text-align: left;
 }
 .productForWomen{
     border: 1px solid rgb(7, 104, 39);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.WomenProduct{
-    margin-left: 1rem;
-    font-weight: bold;
-    font-size: 1.5em;
-}
 
 .MenProduct{
     margin-right: 2rem;
@@ -268,21 +308,94 @@ nav a:hover{
 
 /* Jacket specific page */
 
-.selected-jacket{
-    display: flex;  
-    max-width: 1000px;
-
+.selected-jacket,
+.product-info{
+    display: flex; 
+    justify-content: space-between;
+    gap: 10px;
+    max-width: 1500px;
+    margin: 30px; 
+    
 }
 
-.red-jacket{
+.selected-jacket > *,
+.product-info > * {
     flex: 1;
+}
+
+.red-jacket-text{
+   background-color: #fcfcfc;
+    padding-left: 40px;
 }
 
 .selected-jacket_image{
     border-radius: 2px;
+    width: 100%;
 }
 
 
+.size{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+
+
+
+.details_of_product,
+.details_of_shipping{  
+    margin-top: 40px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.details_of_product ul{
+    padding-left:20px ;
+}
+
+
+.review{
+    border: 1px solid gray;
+    padding: 30px;
+    margin: 80px 30px 150px;
+}
+
+
+.write-review{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.review-button{
+    border: 2px solid black;
+    padding: 5px 40px;   
+}
+
+
+.customer-review{
+    border: 2px solid blue;
+    display: flex;
+    justify-content: space-between;
+      
+}
+
+.customer-review div{
+    flex: 1;
+}
+
+ .review-picture{
+    display: flex;
+    justify-content: space-between;  
+    gap: 25px;
+
+ }   
+.review-text{
+    padding-left:40px;
+
+}
 
 
 /* checkout page */
@@ -315,9 +428,18 @@ nav a:hover{
 }
 
 
+.form_fillUp{
+    border: 2px dotted green;
+    padding-left: 20px;
+
+}
+
 input,
 select{
     border: 1px solid #1d1d1d;
+    border-radius: 4px;
+    margin: 10px 10px 10px 0px;
+    padding:10px;
 }
 .form__input{
     display: block;

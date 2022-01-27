@@ -32,8 +32,16 @@ header{
     height: 5rem;
     border: 1px solid orange;  
     justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
 }
 
+.page_container{
+    margin-top: 5rem;
+}
 
 
 nav{
@@ -270,25 +278,25 @@ nav a:hover{
 }
 
 .jacketwrapp1{
-    display: inline-block;
-    border: 2px solid black;
-    width: 100%;
-    margin-top: 1rem;
+    display: flex;
+    border : 2px dotted black;
+    margin : 10px 0px;
+    justify-content: space-between;
 }
 
 .text1{
-    float: left;
     border: 1px solid black;
-    font-size: 1em;
-    margin-left: 1rem;
+   
 }
+
 .icon1{
-    float: right;
     border: 1px solid black;
-    margin-left: 8rem;
-    margin-top: 1rem;
-    margin-right: 0.5rem;
+       
 }   
+
+.icon_ratings{
+    border: 2px solid red;
+}
 
 .women-jackets{
     display: flex;

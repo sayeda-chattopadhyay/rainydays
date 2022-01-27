@@ -7,7 +7,7 @@ body {
     padding: 0px;
     margin: 0px;
     min-height: 100vh;
-    
+   
 }
 
 h1,
@@ -31,6 +31,7 @@ header{
     align-items: center; 
     height: 5rem;
     border: 1px solid orange;  
+    background-color: cornflowerblue;
     justify-content: space-around;
     position: fixed;
     top: 0;
@@ -129,7 +130,6 @@ nav a:hover{
 
 
 
-
 /* Homepage */
 
 
@@ -221,10 +221,14 @@ nav a:hover{
 
 /* Outdoor Product Page */
 
+.OutdoorProducts h1,
+.filter-section form{
+    margin-left: 20px; 
+}  
+
 .OutdoorProducts h1{
     border: 2px solid green;
     font-size: 40px;
-    margin-left: 0.5em;
     text-align: left;
     color: #023373;
     font-weight: normal;   
@@ -232,8 +236,7 @@ nav a:hover{
 
 .OutdoorProducts h2{
     border: 2px solid black;
-    font-size: 25px;
-    margin-left: 0.5em;
+    font-size: 25px; 
     text-align: left;
     color: #023373;
     font-weight: bold; 
@@ -248,7 +251,7 @@ nav a:hover{
 .OutdoorProducts h3{
     border: 2px solid red;
     font-size: 20px;
-    margin-left: 0.5em;
+   
     text-align: left;
 }
 .productForWomen{
@@ -266,11 +269,19 @@ nav a:hover{
     text-transform: capitalize;
 }
 
+
+.filter-section{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: tomato;
+    padding: 10px;
+}
+
+
 .jacketList{
     border: 2px solid red;
     width: 400px;
-    margin-top: 4rem;
-    
+    margin-top : 4rem;  
 
 }
 .women-jackets_images{
@@ -323,6 +334,7 @@ nav a:hover{
     gap: 10px;
     max-width: 1500px;
     margin: 30px; 
+    border: 4px solid black;
     
 }
 
@@ -334,6 +346,7 @@ nav a:hover{
 .red-jacket-text{
    background-color: #fcfcfc;
     padding-left: 40px;
+    text-align: left;
 }
 
 .selected-jacket_image{
@@ -342,25 +355,42 @@ nav a:hover{
 }
 
 
-.size{
+.size,
+.jacket_star_ratings{
     display: flex;
     align-items: center;
     justify-content:space-between ;
 }
 
+.jacket_star_ratings{
+    max-width: 250px;
+    border:2px solid green;
+    margin-bottom: 40px;
+}
+
+.star_ratings{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 200px;
+    font-size: 10px;
+    border: 3px solid blue;
+    margin: 0px auto;
+    
+}
 
 
 .details_of_product,
 .details_of_shipping{  
     margin-top: 40px;
-    border: 1px solid gray;
+    border: 5px dotted gray;
     border-radius: 4px;
     padding-left: 40px;
     padding-top: 20px;
 }
 
 
-.details_of_shipping p{
+.details_of_shipping p,
+.review-text p{
     max-width: 400px;
 }
 
@@ -385,7 +415,8 @@ nav a:hover{
 
 .review-button{
     border: 2px solid black;
-    padding: 5px 40px;   
+    padding: 5px 40px;
+    text-align: center;   
 }
 
 
@@ -408,6 +439,46 @@ nav a:hover{
  }   
 .review-text{
     padding-left:40px;
+
+}
+
+/* cart_view_page.html */
+
+.red-jacket,
+.yellow-jacket{
+    display: flex;
+    border: 2px solid blue;
+}
+
+.purchase-details{
+    display: flex;
+    border: 2px solid rgb(255, 77, 0);
+    gap: 20px;
+}
+
+.purchase-details div{
+    flex: 1;
+}
+
+.jacket-details{
+    flex: 2;
+}
+
+.billing-details{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border: 2px solid green;
+}
+
+
+.checkbtn{
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid brown;
 
 }
 
@@ -458,6 +529,12 @@ select{
 .form__input{
     display: block;
 }
+
+
+ 
+
+
+
 
 
 
@@ -530,5 +607,6 @@ select{
     }
 }
    
-    
+   
+
 

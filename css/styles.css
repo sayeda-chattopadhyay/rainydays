@@ -250,8 +250,7 @@ nav a:hover{
 
 .OutdoorProducts h3{
     border: 2px solid red;
-    font-size: 20px;
-   
+    font-size: 20px;  
     text-align: left;
 }
 .productForWomen{
@@ -327,6 +326,7 @@ nav a:hover{
 
 /* Jacket specific page */
 
+
 .selected-jacket,
 .product-info{
     display: flex; 
@@ -349,7 +349,8 @@ nav a:hover{
     text-align: left;
 }
 
-.selected-jacket_image{
+.selected-jacket_image,
+.customer-jacket_image{
     border-radius: 2px;
     width: 100%;
 }
@@ -427,17 +428,20 @@ nav a:hover{
       
 }
 
-.customer-review div{
-    flex: 1;
-}
 
  .review-picture{
+    flex: 1;
     display: flex;
     justify-content: space-between;  
     gap: 25px;
-
- }   
+    border: 2px solid green;
+ }  
+ 
+ .review-picture div{
+     flex: 1;
+ }
 .review-text{
+    flex: 1;
     padding-left:40px;
 
 }
@@ -447,28 +451,34 @@ nav a:hover{
 .red-jacket,
 .yellow-jacket{
     display: flex;
-    border: 2px solid blue;
+    justify-content: flex-start;
+    gap: 30px;
+    margin: 20px 0px 0px 20px;
+}
+
+.product-red-jacket,
+.product-yellow-jacket{
+    display: flex;
+    justify-content: space-between;
+    border: 3px dotted green;
 }
 
 .purchase-details{
     display: flex;
     border: 2px solid rgb(255, 77, 0);
     gap: 20px;
-}
-
-.purchase-details div{
-    flex: 1;
-}
-
-.jacket-details{
-    flex: 2;
+    flex-wrap: nowrap;
 }
 
 .billing-details{
-    display: flex;
-    flex: 1;
+    flex: 1;  
     flex-direction: column;
     border: 2px solid green;
+    display: flex;
+}
+.jacket-details{
+    flex: 2;
+   
 }
 
 
@@ -511,11 +521,20 @@ nav a:hover{
     padding: 10px 20px;
 }
 
+.check-out-details{
+    display: flex;
+    gap: 20px;
+}
+
+.Order-summary{
+    flex: 1;
+    border: 2px dotted blue;
+}
 
 .form_fillUp{
     border: 2px dotted green;
     padding-left: 20px;
-
+    flex: 2;
 }
 
 input,
@@ -597,16 +616,29 @@ select{
     font-size: 1em;
 }
 
-/* mobile style */
-@media only screen and (max-width : 926px){
+
+
+
+
+   
+@media only screen and (max-width : 807px){
+    .selected-jacket,
+    .product-info,
+    .write-review,
+    .customer-review,
+    .review-picture,
+    .review-text{
+        flex-flow: column wrap;
+    }
     .footer{
         height: 120vh;
     }
     .footer-email-form{
         margin-top: 2rem;
     }
+    
+
 }
-   
-   
+
 
 

@@ -34,7 +34,7 @@
       <div class="page_container">
         <main>
           <section class="selected-jacket">
-              <div class="red-jacket" >
+              <div class="red-jacket-bigpic">
                 <img src="/images/Product-List/jacket2 copy.jpg" alt="women wearing red jacket" class="selected-jacket_image" >
               </div>
               <div class="red-jacket-text"> 
@@ -42,7 +42,7 @@
                 <h3>Women</h3>
                 <p> Price 1650 nok</p> 
                 <p>colour : Red </p> 
-                <div class="size">
+                <div class="product-size">
                     <p>Size: Medium</p>
                     <a href="#" >Size guide</a>
                </div>                
@@ -57,7 +57,7 @@
                   </div>                
                 </div>              
                 <div>
-                  <a href="cart_view_page.html" class="cta cta cart">Add to cart</a>  
+                  <a href="cart_view_page.html" class="cta cta-cart">Add to cart</a>  
                 </div>               
               </div>       
          </section> 
@@ -93,28 +93,59 @@
            <div class="all-review">
             <h2>Reviews (12)</h2>
             <div class="write-review">
-              <h3>Average ratings</h3>
-              <a href="#" class="review-button">Write a Review</a>
+              <div class="average-ratings">
+                <h3>Average ratings</h3>
+                <div class="star_ratings">
+                  <div class="star_ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>                  
+                  </div>                
+               </div>                              
+              </div>
+              <div>
+                <a href="#" class="review-button">Write a Review</a>
+              </div>             
             </div>
+           </div>
+           <div class="Sort-by"> 
+            <select name="sortBy" id="sortBy">
+              <option value="sortBy">Sort By</option>
+              <option value="Most Recent">Most Recent</option>
+              <option value="Most Helpful>">Most Helpful</option>
+              <option value="Featured">Featured</option>
+            </select>
            </div>
            <div class="customer-review">
              <div class="review-picture">
                <div>
-                <img src="/images/review_image.png" alt="picture of Anny Robinson who wrote a review for red jacket."> 
+                <img src="/images/review_image.png" alt="picture of Anny Robinson who wrote a review for red jacket." class="customer-jacket_image"> 
                </div>
-               <div>
+               <div class="review-picture-text">
                 <h3>Nequi omnit quasit eost</h3>
                 <h4>Women</h4>
                 <p>Colour:Red </p>
                 <p>Size : XL</p>
-                <p>Ratings</p>
+                <div class="jacket_star_ratings">
+                  <p>Ratings</p>
+                  <div class="star_ratings">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>                  
+                  </div>                
+                </div> 
                </div>              
              </div>
              <div class="review-text">
                <h3>Anny Robinson</h3>
-               <p>Nequi omnit quasit eost aut fugit ut estium susam fuga. Ficaepe liatque porepera dolorporum que del et est et </p>
+               <p>Nequi omnit quasit eost aut fugit ut estium susam fugaN. Ficaepe liatque porepera dolorporum que del et est et equi omnit quasit eost aut fugit ut estium susam fuga </p>
              </div>
-           </div>               
+           </div>
+           <a href="#"><p class=" viewLink">view more</p></a>                    
          </section>                    
       </main>
       <footer class="footerContainer">

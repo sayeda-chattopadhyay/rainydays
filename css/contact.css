@@ -1,0 +1,35 @@
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  padding: 10px;
+}
+
+
+.ourcontact h1,p{
+    text-align: center;
+    font-size: 35px;
+    padding: 35px;
+}
+
+.ourcontact p{
+    font-size: 20px;
+    text-align: left;
+    margin: 10px 50px;
+   
+}
+
+
+.contact-form{
+    max-width: 500px;
+    margin: 30px auto;
+    border: 2px solid black;
+    padding: 30px 20px;
+    padding: 30px 20px;
+}
+
+.cta-send{
+    margin-top: 50px;
+}

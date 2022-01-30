@@ -1,0 +1,78 @@
+
+
+.adventure_content{
+    position: relative;
+}
+
+.adventure,
+.outdoor,
+.seasontype,
+.guidance{  
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x:center ;
+    background-position-y:bottom ;   
+    min-height: 70vh;
+    position: relative;
+    width: 100%;
+
+}
+
+
+.adventure{
+    background-image: url("../images/Home-adventure.jpg");
+    
+}
+
+.outdoor{
+    background-image: url("../images/Home-outdoor.jpg");
+    
+}
+
+.seasontype{
+    background-image: url("../images/Home-seasontype.jpeg");
+    
+}
+
+.guidance{
+    background-image: url("../images/Home-guidance.jpg")
+   
+}
+
+
+
+.product-featured h1{
+    font-size: 35px;
+    margin-right: 0.5em;
+    text-align: right;
+
+}
+
+.product-featured h2{
+    color: #fff;
+    font-size: 35px;  
+    text-align: left;
+    padding-left: 0.5em;
+}
+
+
+.explore-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top:25rem ;
+    padding-right: 1rem;
+    padding-left: 5rem;
+  
+}
+
+.explore-cta-season{   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+    padding-top:25rem;
+    padding-left: 5rem;
+    margin-left: 10px;
+   
+}
+

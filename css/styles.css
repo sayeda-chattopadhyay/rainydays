@@ -6,8 +6,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    min-height: 100vh;
-   
+    min-height: 100vh;  
 }
 
 h1,
@@ -29,10 +28,9 @@ img{
 header{
     display: flex; 
     align-items: center; 
-    height: 5rem;
-    border: 1px solid orange;  
+    height: 5rem; 
     background-color: cornflowerblue;
-    justify-content: space-around;
+    justify-content: start;
     position: fixed;
     top: 0;
     left: 0;
@@ -47,38 +45,38 @@ header{
 
 nav{
     margin: auto;
-    border: 3px solid red;
+    display: block;
+    position: static;
+}
+
+.label-hamburger-menu{
     display: none;
 }
 
 
-
 nav ul{
     padding: 0px;
-    border: 3px dotted blue;
 }
 
 nav ul li{
     display: inline-block; 
-    border: 2px solid green;
-
 }
-
 
 
 .nav-icons{
     margin-right: 1rem;
+    font-size: 1.5em;
 }
 
 /* link */
 
 a{
-    text-decoration: none;
+    text-decoration: none;   
 }
 
 header a{
     color: #1d1d1d;
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -87,11 +85,15 @@ header a{
     color: #fff;
     font-size: 1em;
     padding: 10px 30px;
-    border-radius: 30px;
-    border-color: #707070;    
+    border-radius: 30px;      
     margin-right: 20px;
 }
 
+.cta-shopping{
+    background-color: #fff;
+    color:#023373 ;
+    border: 2px solid #023373;
+}  
 
 
 .active{
@@ -108,6 +110,11 @@ header a{
     transition: all 0.4s ease out;
 }
 
+.cta-shopping:hover{
+    background-color: #023373;
+    color: #fff; 
+    transition: all 0.4s ease out;  
+}
 
 i{
     display: inline-block;
@@ -119,14 +126,13 @@ i{
 
 nav ul li a{
     color: #1d1d1d;
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: 600;
 }
 
 nav a:hover{
     text-decoration: underline;
 }
-
 
 
 .footer-heading a{
@@ -178,8 +184,9 @@ nav a:hover{
    
 }
 
+
+
 .product-featured h1{
-    border: 2px solid green;
     font-size: 35px;
     margin-right: 0.5em;
     text-align: right;
@@ -190,7 +197,6 @@ nav a:hover{
     color: #fff;
     font-size: 35px;  
     text-align: left;
-    border: 2px solid brown;
     padding-left: 0.5em;
 }
 
@@ -202,7 +208,7 @@ nav a:hover{
     padding-top:25rem ;
     padding-right: 1rem;
     padding-left: 5rem;
-    border: 3px solid yellowgreen;
+  
 }
 
 .explore-cta-season{   
@@ -212,16 +218,10 @@ nav a:hover{
     padding-top:25rem;
     padding-left: 5rem;
     margin-left: 10px;
-    border: 3px solid black;
+   
 }
 
-.navigation-menu{
-    overflow: hidden;
-    border-color: 2px solid blue;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
+
 
 /* Outdoor Product Page */
 
@@ -231,7 +231,6 @@ nav a:hover{
 }  
 
 .OutdoorProducts h1{
-    border: 2px solid green;
     font-size: 40px;
     text-align: left;
     color: #023373;
@@ -239,7 +238,6 @@ nav a:hover{
 }
 
 .OutdoorProducts h2{
-    border: 2px solid black;
     font-size: 25px; 
     text-align: left;
     color: #023373;
@@ -247,20 +245,15 @@ nav a:hover{
 }
 
 
-.OutdoorProducts{
-    border: 1px solid red;
-}
     
 
 .OutdoorProducts h3{
-    border: 2px solid red;
     font-size: 20px;  
     text-align: left;
-    margin: 0px 20px;
+    margin:  20px;
 }
 
 .productForWomen{
-    border: 1px solid rgb(7, 104, 39);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -279,13 +272,13 @@ nav a:hover{
 .filter-section{
     display: flex;
     flex-wrap: wrap;
-    background-color: tomato;
+    background-color: #ff6347;
     padding: 10px;
 }
 
 
 .jacketList{
-    border: 2px solid red;
+    background-color:#f5f1f1 ;
     width: 400px;
     margin-top : 4rem;  
 
@@ -296,20 +289,13 @@ nav a:hover{
 
 .jacketwrapp1{
     display: flex;
-    border : 2px dotted black;
     margin : 10px 0px;
     justify-content: space-between;
 }
 
-.text1{
-    border: 1px solid black;
-   
-}
-
-.icon1{
-    border: 1px solid black;
-       
-}   
+ .icon1{
+     font-size: 1.5em;
+ }
 
 .icon_ratings{
     border: 2px solid red;
@@ -341,8 +327,7 @@ nav a:hover{
     gap: 10px;
     max-width: 1500px;
     margin: 30px; 
-    border: 4px solid black;
-    
+   
 }
 
 .selected-jacket > *,
@@ -356,12 +341,7 @@ nav a:hover{
 }
 
 
-.red-jacket-text{
-   background-color: #fcfcfc;
-    padding: 30px 60px;
-    text-align: left;
-    border: 2px dotted blue;
-}
+
 
 .selected-jacket_image,
 .customer-jacket_image{
@@ -400,11 +380,10 @@ nav a:hover{
    
 }
 
-
 .details_of_product,
 .details_of_shipping{  
     margin-top: 40px;
-    border: 5px dotted gray;
+    border: 1px solid gray;
     border-radius: 4px;
     padding-left: 40px;
     padding-top: 20px;
@@ -486,19 +465,20 @@ nav a:hover{
     justify-content: flex-start;
     gap: 30px;
     margin: 20px 0px 0px 20px;
+    text-align: left;
 }
 
 .product-red-jacket,
 .product-yellow-jacket{
     display: flex;
     justify-content: space-between;
-    border: 3px dotted green;
     align-items: top;
+   
 }
 
 .purchase-details{
     display: flex;
-    border: 2px solid rgb(255, 77, 0);
+    border: 0.5px solid #a9a3a3;
     gap: 20px;
     flex-wrap: nowrap;
     margin: 80px 30px;
@@ -507,11 +487,15 @@ nav a:hover{
 .billing-details{
     flex: 1;  
     flex-direction: column;
-    border: 2px solid green;
-    background-color: #f9f9ff;
+    background-color: #efeff4;
     display: flex;
     text-align: left;
     padding-left: 20px;
+    margin-top: 20px;
+}
+
+.billing-details-text{
+    font-weight: 600;
 }
 .jacket-details{
     flex: 2;
@@ -524,26 +508,30 @@ nav a:hover{
     padding: 10px;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    border: 1px solid brown;
+    gap: 40px; 
     margin-top: 40px;
 }
 
 
 /* checkout page */
 
+.Page-checkout h1{
+    font-size: 50px;
+    text-align: center;
+}
+
 .checkout-heading{
     display: flex;
     justify-content: space-between;
-    margin: 10px 20px;
-    border: 2px solid blue;
+    margin: 10px 20px;   
     flex-wrap: wrap;
 }
+
+
 
 .fast-checkout{
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -555,8 +543,11 @@ nav a:hover{
 .checkout-steps{
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    border: 1px solid gray;
     padding: 10px 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-weight: 500;
 }
 
 .check-out-details{
@@ -566,9 +557,9 @@ nav a:hover{
 
 
 .form_fillUp{
-    border: 2px dotted green;
     padding-left: 20px;
     flex: 2;
+    margin-top: 10px;
 }
 
 input,
@@ -576,18 +567,26 @@ select{
     border: 1px solid #1d1d1d;
     border-radius: 4px;
     margin: 10px 10px 10px 0px;
-    padding: 5px;
+    padding: 15px;
 }
 .form__input{
     display: block;
+    padding-right: 150px;
+    padding-top: 20px;
 }
+
+
 
 .total-jackets{
     flex: 1;
     display: flex;
     flex-direction: column;
-    border: 2 px solid black;
+    border: 0.2px solid black; 
+    margin-top: 20px;
+    border-radius: 2px;
+    padding:10px;
 }
+
 
 
 
@@ -622,36 +621,40 @@ select{
 
 .footerContainer{
     background-color: #023373;
-    padding-bottom: 64px;
+    padding-bottom: 50px;   
+    
 }
     
 
 
 .footer{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     background-color: #023373;
     color: #fff;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 8px auto;
-    padding-top: 30px;
+    padding-top: 30px;   
+    gap: 10px;
 }
 
-.footer-heading{
+
+
+
+.footer-heading,
+.footer-email-form{
     display: flex;
     flex-direction: column;
     margin-right: 64px;
 }
 
-.footer-email-form h3{
-    margin-bottom: 32px;
-}
+
+
 
 #footer-email{
-    width: 250px;
-    height: 40px;
+    width: 250px;   
     border-radius: 4px;
     outline: #fff;
     border: #fff;
@@ -666,7 +669,6 @@ select{
 
 #footer-email-btn{
     width: 100px;
-    height: 40px;
     border-radius: 4px;
     background-color: #fff;
     color: #1d1d1d;
@@ -675,8 +677,44 @@ select{
     font-size: 1em;
 }
 
+
+
+
+/*media Query */
+
+@media only screen and (max-width : 480px){
+    .cta{
+    font-size: 0.7em;
+    padding: 10px 20px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .Page-checkout h1 {
+        font-size: 35px;
+    }
+
+
+
+    .product-red-jacket,
+    .product-yellow-jacket{
+     flex-direction: column;
+
+    }
+    .red-jacket,
+    .yellow-jacket{
+    flex-direction: column;
+
+    }
+    
+}
+
+
    
 @media only screen and (max-width : 807px){
+    
     .selected-jacket,
     .product-info,
     .write-review,
@@ -686,15 +724,24 @@ select{
     .check-out-details{
         flex-flow: column wrap;
     }
-    .footer{
-        height: 120vh;
-    }
-    .footer-email-form{
-        margin-top: 2rem;
-    }
 
+    .selected-jacket{
+        display: block;
+    }
+   
+}
+    @media only screen and (max-width : 1000px){
+
+    .purchase-details{
+        flex-direction: column;
+
+    }   
+ 
+}
+@media only screen and (max-width : 1249px){
+
+.footer{
+    height: 120vh;
+ }
 
 }
-
-
-

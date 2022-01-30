@@ -11,15 +11,13 @@
     <link rel="stylesheet" href="css/styles.css"> 
   </head>
   <body>
-      <header>
-        <div class="brand-logo">
-            <a href="index.html" > <img class="logo" src="/images/rainydays_logo .png" alt="Logo of Rainydays website"></a>
-          </div>
-          <h1>Check out</h1>
-      </header>
-      <div class="page_container"> 
+    <header>
+         <a href="index.html" > <img class="logo" src="/images/rainydays_logo .png" alt="Logo of Rainydays website"></a>     
+   </header>     
+    <div class="page_container"> 
         <main>
-          <section>
+          <section class="Page-checkout">
+            <h1>Check Out</h1>
             <div class="checkout-heading">
               <h2>Guest checkout</h2>
               <div class="fast-checkout">
@@ -85,7 +83,9 @@
             <h4>Add Promo Code/Voucher + </h4>
           </div> 
           <div class="total-jackets">
-            <h2>Order Summary</h2>
+            <div class="Order-heading">
+              <h2>Order Summary</h2>
+            </div>           
             <div class="red-jacket">
               <div>
                 <img src="images/red-jacket.png" alt="jacket red">
@@ -108,8 +108,23 @@
                 <p>Price 1650 nok</p>
               </div>                        
             </div> 
-          </div>
-          
+            <div class="billing-details">
+              <div>
+                <p>Sub Total 3100 nok</p>
+                <p>Delivery Cost 150 nok</p>
+                <p>Tax(15% Vat) 465</p>
+                <p>Total Pay 3715 nok</p>
+              </div>
+              <div class="checkbtn">
+                <div>
+                  <a href="successful_checkout_page.html" class="cta">Continue to pay</a>
+                </div>
+                <div>
+                  <a href="index.html" class="cta cta-shopping">Back to shopping</a>
+                </div>                           
+              </div>                 
+            </div>
+          </div>          
         </section>
         </main>
         <footer class="footerContainer">
